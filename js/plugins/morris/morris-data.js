@@ -6,59 +6,45 @@ $(function() {
     Morris.Area({
         element: 'morris-area-chart',
         data: [{
-            period: '2010 Q1',
-            iphone: 2666,
-            ipad: null,
-            itouch: 2647
+            periodo: '2014 T1',
+            costo: 2666,
+            beneficio: 2647
         }, {
-            period: '2010 Q2',
-            iphone: 2778,
-            ipad: 2294,
-            itouch: 2441
+            periodo: '2014 T2',
+            costo: 2778,
+            beneficio: 2294
         }, {
-            period: '2010 Q3',
-            iphone: 4912,
-            ipad: 1969,
-            itouch: 2501
+            periodo: '2014 T3',
+            costo: 4912,
+            beneficio: 1969
         }, {
-            period: '2010 Q4',
-            iphone: 3767,
-            ipad: 3597,
-            itouch: 5689
+            periodo: '2014 T4',
+            costo: 3767,
+            beneficio: 3597
         }, {
-            period: '2011 Q1',
-            iphone: 6810,
-            ipad: 1914,
-            itouch: 2293
+            periodo: '2014 T1',
+            costo: 6810,
+            beneficio: 1914
         }, {
-            period: '2011 Q2',
-            iphone: 5670,
-            ipad: 4293,
-            itouch: 1881
+            periodo: '2014 T2',
+            costo: 5670,
+            beneficio: 4293
         }, {
-            period: '2011 Q3',
-            iphone: 4820,
-            ipad: 3795,
-            itouch: 1588
+            periodo: '2014 T3',
+            costo: 4820,
+            beneficio: 4200
         }, {
-            period: '2011 Q4',
-            iphone: 15073,
-            ipad: 5967,
-            itouch: 5175
+            periodo: '2014 T4',
+            costo: 15073,
+            beneficio: 5967
         }, {
-            period: '2012 Q1',
-            iphone: 10687,
-            ipad: 4460,
-            itouch: 2028
-        }, {
-            period: '2012 Q2',
-            iphone: 8432,
-            ipad: 5713,
-            itouch: 1791
+            periodo: '2015 T1',
+            costo: 10687,
+            ipad: 4460
         }],
-        xkey: 'period',
-        ykeys: ['iphone', 'ipad', 'itouch'],
-        labels: ['iPhone', 'iPad', 'iPod Touch'],
+        xkey: 'periodo',
+        ykeys: ['costo', 'beneficio'],
+        labels: ['Costo', 'Beneficio'],
         pointSize: 2,
         hideHover: 'auto',
         resize: true
