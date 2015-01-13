@@ -13,7 +13,7 @@
 */
 ?>
 <html>
-
+<?php //require("../config/config.php"); ?>
 <?php include("meta.php"); ?>
 <title>BIG BUSINESS</title>
 <?php include("javascript.php");?>

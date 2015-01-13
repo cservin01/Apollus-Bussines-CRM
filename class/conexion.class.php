@@ -14,10 +14,10 @@
 class Conexion{
     private static $instancia;
     private $dbh;
-    private function __construct($bd_host, $bd_user, $bd_password, $bd_data_base){
+    private function __construct(){
         try {
- 			$this->dbh = new PDO("mysql:host=$bd_host;dbname=$bd_data_base", $bd_user, $bd_password);
-            //$this->dbh = new PDO('mysql:host=localhost;dbname=apollus', 'root', 'root');
+ 			//$this->dbh = new PDO("mysql:host=$bd_host;dbname=$bd_data_base", $bd_user, $bd_password);
+            $this->dbh = new PDO('mysql:host=localhost;dbname=apollus', 'root', 'root');
             $this->dbh->exec("SET CHARACTER SET utf8");
  
         } catch (PDOException $e) {
