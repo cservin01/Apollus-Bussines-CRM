@@ -11,7 +11,7 @@
 * other free or open source software licenses.
 * See copyright.php for copyright notices and details.
 */
-
+require_once 'config/config.php';
 require_once 'class/conexion.class.php';
 session_start();
 class Login
@@ -44,7 +44,7 @@ class Login
         
         try {
             
-            $sql = "SELECT * from users WHERE nombre = ? AND password = ?";
+            $sql = "SELECT * FROM users WHERE us_name_user = ? AND us_pass = ?";
             $query = $this->dbh->prepare($sql);
             $query->bindParam(1,$nick);
             $query->bindParam(2,$password);
@@ -56,7 +56,8 @@ class Login
             {
                 
                  $fila  = $query->fetch();
-                 $_SESSION['nombre'] = $fila['nombre'];                
+                 $_SESSION['user'] = $fila['us_name_user'];
+				 $_SESSION['name_user'] = $fila['us_name'];                 
                  return TRUE;
     
             }

@@ -24,8 +24,8 @@ define('PFX_SYS', 				'sf_');
 define("DB_HOST", 				'127.0.0.1');
 define("DB_USERNAME", 			'root');
 define("DB_PASSWORD", 			'root');
-define("DB_NAME", 				'clouderp');
-define("PFX_MAIN_DB", 			'cerp_');
+define("DB_NAME", 				'apollus');
+define("PFX_MAIN_DB", 			'crm_');
 
 /**************** 	Paths Definitions	 ******************/
 define("DIRECTORY_CLASS",		"class/");

@@ -16,22 +16,22 @@
             <div class="collapse navbar-collapse navbar-ex1-collapse">
                 <ul class="nav navbar-nav side-nav">
                     <li class="active">
-                        <a href="index.html"><i class="fa fa-fw fa-dashboard"></i> Dashboard</a>
+                        <a href="index.php"><i class="fa fa-fw fa-dashboard"></i> Dashboard</a>
                     </li>
                     <li>
-                        <a href="charts.html"><i class="fa fa-fw fa-bar-chart-o"></i> Gráficas</a>
+                        <a href="index.php?charts"><i class="fa fa-fw fa-bar-chart-o"></i> Gráficas</a>
                     </li>
                     <li>
-                        <a href="tables.html"><i class="fa fa-fw fa-table"></i> Tablas</a>
+                        <a href="index.php?tables"><i class="fa fa-fw fa-table"></i> Tablas</a>
                     </li>
                     <li>
-                        <a href="forms.html"><i class="fa fa-fw fa-edit"></i> Formularios</a>
+                        <a href="index.php?forms"><i class="fa fa-fw fa-edit"></i> Formularios</a>
                     </li>
                     <li>
-                        <a href="bootstrap-elements.html"><i class="fa fa-fw fa-desktop"></i> Elementos Bootstrap</a>
+                        <a href="index.php?bootstrap"><i class="fa fa-fw fa-desktop"></i> Elementos Bootstrap</a>
                     </li>
                     <li>
-                        <a href="bootstrap-grid.html"><i class="fa fa-fw fa-wrench"></i>Divs Bootstrap</a>
+                        <a href="index.php?grid"><i class="fa fa-fw fa-wrench"></i>Divs Bootstrap</a>
                     </li>
                     <li>
                         <a href="javascript:;" data-toggle="collapse" data-target="#demo"><i class="fa fa-fw fa-arrows-v"></i> Dropdown <i class="fa fa-fw fa-caret-down"></i></a>

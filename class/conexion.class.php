@@ -11,15 +11,13 @@
 * other free or open source software licenses.
 * See copyright.php for copyright notices and details.
 */
-class Conexion
-{
+class Conexion{
     private static $instancia;
     private $dbh;
-    private function __construct()
-    {
+    private function __construct($bd_host, $bd_user, $bd_password, $bd_data_base){
         try {
- 
-            $this->dbh = new PDO('mysql:host=localhost;dbname=apollus', 'root', 'root');
+ 			$this->dbh = new PDO("mysql:host=$bd_host;dbname=$bd_data_base", $bd_user, $bd_password);
+            //$this->dbh = new PDO('mysql:host=localhost;dbname=apollus', 'root', 'root');
             $this->dbh->exec("SET CHARACTER SET utf8");
  
         } catch (PDOException $e) {
@@ -30,14 +28,12 @@ class Conexion
         }
     }
  
-    public function prepare($sql)
-    {
+    public function prepare($sql){
  
         return $this->dbh->prepare($sql);
  
     }
-    public static function singleton_conexion()
-    {
+    public static function singleton_conexion(){
  
         if (!isset(self::$instancia)) {
             $miclase = __CLASS__;
@@ -51,8 +47,7 @@ class Conexion
  
  
      // Evita que el objeto se pueda clonar
-    public function __clone()
-    {
+    public function __clone(){
  
         trigger_error('La clonación de este objeto no está permitida', E_USER_ERROR);
  
