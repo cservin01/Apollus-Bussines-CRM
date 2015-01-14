@@ -16,10 +16,10 @@ session_start();
 
 if(isset($_SESSION['user'])){
 ?>
-
+<html>
 <?php //require("../config/config.php"); ?>
 <?php include("template/meta.php"); ?>
-<title>..:: Apollus! | Project ::..</title>
+<title>..:: Apollus! | Tracker ::..</title>
 <?php include("template/javascript.php");?>
 <?php include("template/css.php");?>
 <body>
@@ -31,48 +31,22 @@ if(isset($_SESSION['user'])){
 			    	<!-- Page Heading -->
 			        <div class="row">
 				        <div class="col-lg-12">
-				        <h1 class="page-header">Project <small>CRM</small></h1>
+				        <h1 class="page-header">Tracker<small>System</small></h1>
 				        	<ol class="breadcrumb">
 				            	<li><i class="fa fa-dashboard"></i>  <a href="index.php">Dashboard</a></li>
-				                <li class="active"><i class="fa fa-file"></i> Project</li>
+				                <li class="active"><i class="fa fa-file"></i> Blank Page</li>
 				            </ol>
 				         </div>
 			     	</div>
 			     <!-- /.row -->
 				</div>
-				<script type="text/javascript" src="js/project/testdata.js"></script>
-				<div id="gantt_here" style='width:100%; height:100%; min-height: 500px;'></div>
-				<script type="text/javascript">
-			        var tasks =  {
-			            data:[
-			                {id:1, text:"Project #2", start_date:"01-04-2013", duration:18,order:10,
-			                    progress:0.4, open: true},
-			                {id:2, text:"Task #1", 	  start_date:"02-04-2013", duration:8, order:10,
-			                    progress:0.6, parent:1},
-			                {id:3, text:"Task #2",    start_date:"11-04-2013", duration:8, order:20,
-			                    progress:0.6, parent:1}
-			            ],
-			                    links:[
-			            { id:1, source:1, target:2, type:"1"},
-			            { id:2, source:2, target:3, type:"0"},
-			            { id:3, source:3, target:4, type:"0"},
-			            { id:4, source:2, target:5, type:"2"},
-			        ]
-			        };
-			
-					gantt.init("gantt_here");
-			
-			
-					gantt.parse(tasks);
-			
-				</script>
 			<!-- /.container-fluid -->
 			</div>
 		<!-- /#wrapper -->
     	</div>
-
-<?php include("template/footer.php");?>
 </body>
+<?php include("template/footer.php");?>
+
 </html>
 <?php }else{
 	header("Location:login.php");

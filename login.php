@@ -14,9 +14,6 @@
 */
 
 require_once 'class/class.login.php';
-//accedemos al método singleton que es quién crea la instancia
-//de nuestra clase y así podemos acceder sin necesidad de
-//crear nuevas instancias, lo que ahorra consumo de recursos
 $nuevoSingleton = Login::singleton_login();
  
 if(isset($_POST['nick'])){
@@ -34,7 +31,7 @@ if(isset($_POST['nick'])){
 <html lang="es">
 <head>
        <meta charset="utf-8" />
-    <title>Login con singleton y pdo</title>
+    <title>..:: Apollus! | Login ::..</title>
     <style type="text/css">
         body{
             background: #d1e0e5;

@@ -14,7 +14,7 @@
 
 session_start();
 
-if(isset($_SESSION['usuario'])){
+if(isset($_SESSION['user'])){
 ?>
 <html>
 <?php //require("../config/config.php"); ?>

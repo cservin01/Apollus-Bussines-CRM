@@ -19,19 +19,22 @@
                         <a href="index.php"><i class="fa fa-fw fa-dashboard"></i> Dashboard</a>
                     </li>
                     <li>
-                        <a href="index.php?charts"><i class="fa fa-fw fa-bar-chart-o"></i> Gráficas</a>
+                        <a href="project.php"><i class="fa fa-fw fa-desktop"></i> Project</a>
+                    </li>
+                    <li>
+                        <a href="tracker.php"><i class="fa fa-fw fa-bar-chart-o"></i> Tracker</a>
                     </li>
                     <li>
                         <a href="index.php?tables"><i class="fa fa-fw fa-table"></i> Tablas</a>
                     </li>
                     <li>
-                        <a href="index.php?forms"><i class="fa fa-fw fa-edit"></i> Formularios</a>
+                        <a href="charts.php"><i class="fa fa-fw fa-edit"></i> Charts</a>
                     </li>
-                    <li>
+                   <!-- <li>
                         <a href="index.php?bootstrap"><i class="fa fa-fw fa-desktop"></i> Elementos Bootstrap</a>
                     </li>
                     <li>
-                        <a href="index.php?grid"><i class="fa fa-fw fa-wrench"></i>Divs Bootstrap</a>
+                        <a href="config.php"><i class="fa fa-fw fa-wrench"></i>Configuración</a>
                     </li>
                     <li>
                         <a href="javascript:;" data-toggle="collapse" data-target="#demo"><i class="fa fa-fw fa-arrows-v"></i> Dropdown <i class="fa fa-fw fa-caret-down"></i></a>
@@ -49,7 +52,7 @@
                     </li>
                     <li>
                         <a href="index-rtl.html"><i class="fa fa-fw fa-dashboard"></i> RTL Dashboard</a>
-                    </li>
+                    </li>-->
                 </ul>
             </div>
             <!-- /.navbar-collapse -->
