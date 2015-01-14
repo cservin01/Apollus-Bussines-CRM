@@ -33,7 +33,7 @@ Author:		Templatemo
 Copyright:	Copyright (C) Templatemo
 License:	GNU General Public License (GPL)
 
-Smooth Navigational Menu
+dhtmlxGantt
 -----
 Author:		Dynamic Drive DHTML
 Copyright:	Copyright (C) Dynamic Drive

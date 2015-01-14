@@ -11,6 +11,9 @@
 * other free or open source software licenses.
 * See copyright.php for copyright notices and details.
 */
+session_start();
+
+if(isset($_SESSION['usuario'])){
 ?>
 <html>
 <?php //require("../config/config.php"); ?>
@@ -22,3 +25,7 @@
 <?php include("footer.php");?>
 
 </html>
+<?php }else{
+	header("Location:login.php");
+}
+?>

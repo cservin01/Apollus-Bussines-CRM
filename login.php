@@ -19,15 +19,13 @@ require_once 'class/class.login.php';
 //crear nuevas instancias, lo que ahorra consumo de recursos
 $nuevoSingleton = Login::singleton_login();
  
-if(isset($_POST['nick']))
-{
+if(isset($_POST['nick'])){
     $nick = $_POST['nick'];
     $password = $_POST['password'];
     //accedemos al método usuarios y los mostramos
     $usuario = $nuevoSingleton->login_users($nick,$password);
     
-    if($usuario == TRUE)
-    {
+    if($usuario == TRUE){
         header("Location:index.php");
     }
 }
