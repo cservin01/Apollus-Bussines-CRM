@@ -24,6 +24,9 @@
                     <li>
                         <a href="tracker.php"><i class="fa fa-fw fa-bar-chart-o"></i> Tracker</a>
                     </li>
+                     <li>
+                        <a href="schedule.php"><i class="fa fa-fw fa-bar-calendar"></i> Agenda</a>
+                    </li>
                     <li>
                         <a href="index.php?tables"><i class="fa fa-fw fa-table"></i> Tablas</a>
                     </li>
