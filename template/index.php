@@ -1,4 +1,4 @@
-<?php 
+﻿<?php 
 /*
 * @version		$Id: copyright.php 
 * @Credit: 		Carlos Servín 2015 
@@ -18,7 +18,7 @@ if(isset($_SESSION['usuario'])){
 <html>
 <?php //require("../config/config.php"); ?>
 <?php include("meta.php"); ?>
-<title>BIG BUSINESS</title>
+<title>..:: Apollus! Business CRM ::..</title>
 <?php include("javascript.php");?>
 <?php include("css.php");?>
 <?php include("body.php");?>

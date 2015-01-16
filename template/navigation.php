@@ -1,4 +1,4 @@
-<?php 
+﻿<?php 
 /*
 * @version		$Id: copyright.php 
 * @Credit: 		Carlos Servín 2015 
@@ -22,8 +22,8 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand" href="index.html">Big Business</a>
-            </div>
+                <a class="navbar-brand" href="index.php">Apollus! Business CRM</a>
+            </div>v
 			<?php include("topmenu.php"); ?>
 			<?php include("sidebar.php"); ?>
         </nav>

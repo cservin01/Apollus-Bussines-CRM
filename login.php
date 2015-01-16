@@ -84,10 +84,10 @@ if(isset($_POST['nick'])){
     <form class="form" action="login.php" method="post">
         
         <label>Usuario:</label>
-        <input type="text" name="nick" required="true" placeholder="Introduce tu usuario" />
+        <input type="text" name="nick" required="true" placeholder="Usuario: admin" />
         
         <label>Password:</label>
-        <input type="password" name="password" required="true" placeholder="Introduce tu password" />
+        <input type="password" name="password" required="true" placeholder="Password: admin" />
         
         <input type="submit" value="Login" />
         </div>
