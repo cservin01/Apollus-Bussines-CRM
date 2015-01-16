@@ -38,7 +38,7 @@ if(isset($_POST['nick'])){
         }
         .content{
              margin: 0 auto;
-             width: 500px;
+             width: 600px;
              height: 300px;
              margin-top: 9%;
              background: #000;
@@ -53,7 +53,7 @@ if(isset($_POST['nick'])){
             margin: 30px 0px 0px 70px;
         }
         .caja_login input[type=text],input[type=password]{
-            width: 280px;
+            width: 250px;
             padding: 8px 6px;
             border-radius: 8px;
         }
@@ -66,13 +66,21 @@ if(isset($_POST['nick'])){
             border: 1px solid #fff;
             margin-top: 10px;
         }
+        .left{
+        	float: left;
+        	width: 100%;
+        }
     </style>
 </head>
  
 <body>
 <div class="content">
     <div class="caja_login">
-    <h2>Login</h2>
+    	<div class="left" style="width: 100px;">
+    	<img src="img/apollus.png" width="100" height="100" />
+    	</div>
+    	<div class="left" style="width: 250px;">
+    <h2>Apollus! Business CRM</h2>
     <form class="form" action="login.php" method="post">
         
         <label>Usuario:</label>
@@ -82,7 +90,7 @@ if(isset($_POST['nick'])){
         <input type="password" name="password" required="true" placeholder="Introduce tu password" />
         
         <input type="submit" value="Login" />
-        
+        </div>
     </form>
     </div>
 </div>
