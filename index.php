@@ -1,6 +1,5 @@
 <?php 
 
-session_start();
 
 /*
 * @version		$Id: copyright.php 
@@ -14,20 +13,64 @@ session_start();
 * other free or open source software licenses.
 * See copyright.php for copyright notices and details.
 */
-
-if(isset($_SESSION['user'])){ ?>
-    
-    <html>
-	<?php include("template/meta.php"); ?>
-	<title>BIG BUSINESS</title>
-	<?php include("template/javascript.php");?>
-	<?php include("template/css.php");?>
-	<?php include("template/body.php");?>
-	<?php include("template/footer.php");?>
-	</html>
-<?php
-   
-}else{
-    header("Location: login.php");
-}
 ?>
+    
+    <?php
+    	include('frontend/template/meta.php');
+		include ('frontend/template/css.php');
+		include ('frontend/template/javascript.php');
+		include ('frontend/template/ico.php'); 
+	?>
+
+	 <!-- Le styles -->   
+    <style type="text/css">
+      body {
+        padding-top: 60px;
+        padding-bottom: 40px;
+      }
+    </style>
+
+  </head>
+
+  <body>
+
+    <?php include('frontend/template/navigation.php'); ?>
+
+    <div class="container">
+
+      <!-- Main hero unit for a primary marketing message or call to action -->
+      <div class="hero-unit">
+        <h1>Atención a Clientes</h1>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis metus metus, gravida sed tellus ornare, euismod venenatis lacus. Nunc aliquet ante ut ligula facilisis, in rutrum dui consequat.</p>
+        <p><a href="register.php" class="btn btn-primary btn-large">Registrarse &raquo;</a></p>
+      </div>
+
+      <!-- Example row of columns -->
+      <div class="row">
+        <div class="span4">
+          <h2>Clientes</h2>
+          <p>Si usted es el usuario final del producto y desea atención al cliente. </p>
+          <p><a class="btn" href="login.php?type=client">Ingresar &raquo;</a></p>
+        </div>
+        <div class="span4">
+          <h2>Distribuidor</h2>
+          <p>Si usted es distribuidor de nuestros productos.</p>
+          <p><a class="btn" href="login.php?type=dealer">Ingresar &raquo;</a></p>
+       </div>
+        <div class="span4">
+          <h2>Proveedor</h2>
+          <p>Area de proveedores.</p>
+          <p><a class="btn" href="login.php?type=prov">Ingresar &raquo;</a></p>
+        </div>
+      </div>
+
+      <hr>
+
+      <?php include ('frontend/template/footer.php'); ?>
+
+    </div> <!-- /container -->
+
+   <?php include ('frontend/template/javascript2.php'); ?>
+
+  </body>
+  </html>

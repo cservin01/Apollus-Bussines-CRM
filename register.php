@@ -63,14 +63,17 @@ session_start();
   <body>
 
    
-    <div class="container"><form class="form-signin">
-        <h2 class="form-signin-heading">Log in</h2>
-        <input type="text" class="input-block-level" placeholder="Email">
-        <input type="password" class="input-block-level" placeholder="Password">
-        <label class="checkbox">
-          <input type="checkbox" value="remember-me"> Recordarme
-        </label>
-        <button class="btn btn-large btn-primary" type="submit">Sign in</button>
+    <div class="container">
+    	<form class="form-signin">
+        	<h2 class="form-signin-heading">Registrarse</h2>
+        	<input type="text" class="input-block-level" placeholder="Nombre">
+       		<input type="text" class="input-block-level" placeholder="Apellido">
+        	<input type="text" class="input-block-level" placeholder="Email">
+        	<input type="password" class="input-block-level" placeholder="Password">
+        	<label class="checkbox">
+          	<input type="checkbox" value="remember-me"> Recordarme
+        	</label>
+        	<button class="btn btn-large btn-primary" type="submit">Crear cuenta</button>
       </form>      
       
       <hr>
